@@ -1,6 +1,8 @@
+<img width="912" alt="grafik" src="https://github.com/user-attachments/assets/2a876c1d-0d39-4561-81b8-c36ce5d75c74">
+
 # frame_skip_test
 
-An app for detecting and debugging frame skips in Flutter.
+An small test app for detecting and debugging frame skips in Flutter.
 
 NOTE: Most frame skips are also visible in the flutter devtools. Sometimes
 the frame is skipped in lower levels of the stack though, without Flutter noticing.
@@ -13,7 +15,7 @@ The expected output is that on each frame, exactly one cell is filled (black -> 
 
 In case there's a frame skip, you'll see more than one cell being filled in one frame.
 
-### environment variables
+### Environment Variables
 
 #### `FRAME_GRID_STYLE`
 
