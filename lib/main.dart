@@ -17,15 +17,31 @@ void main() {
     _ => FrameGridStyle.blackToWhite,
   };
 
+  final roundDisplay = switch (Platform.environment['ROUND_DISPLAY']) {
+    '1' => true,
+    '0' => false,
+    String value => (() {
+        debugPrint('Unrecognized value for ROUND_DISPLAY: $value');
+        return false;
+      })(),
+    _ => false,
+  };
+
   runApp(MyApp(
     style: style,
+    roundDisplay: roundDisplay,
   ));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key, this.style = FrameGridStyle.blackToWhite});
+  const MyApp({
+    super.key,
+    this.style = FrameGridStyle.blackToWhite,
+    this.roundDisplay = false,
+  });
 
   final FrameGridStyle style;
+  final bool roundDisplay;
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +52,14 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Scaffold(
-        body: FrameGrid(
-          style: style,
+        body: Center(
+          child: FractionallySizedBox(
+            widthFactor: roundDisplay ? sqrt1_2 : 1,
+            heightFactor: roundDisplay ? sqrt1_2 : 1,
+            child: FrameGrid(
+              style: style,
+            ),
+          ),
         ),
       ),
     );
