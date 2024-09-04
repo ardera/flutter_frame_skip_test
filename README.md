@@ -1,11 +1,13 @@
-<img width="912" alt="grafik" src="https://github.com/user-attachments/assets/2a876c1d-0d39-4561-81b8-c36ce5d75c74">
-
 # frame_skip_test
 
 An small test app for detecting and debugging frame skips in Flutter.
 
 NOTE: Most frame skips are also visible in the flutter devtools. Sometimes
 the frame is skipped in lower levels of the stack though, without Flutter noticing.
+
+## Screenshot
+
+<img width="608" alt="grafik" src="https://github.com/user-attachments/assets/2a876c1d-0d39-4561-81b8-c36ce5d75c74">
 
 ## Usage
 
