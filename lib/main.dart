@@ -168,6 +168,7 @@ class _FrameGridState extends State<FrameGrid> {
               nx: nx,
               ny: ny,
               hz: _hz,
+              style: widget.style,
             ),
           ),
         );
