@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="scrolling_test"
+        android:label="frame_skip_test"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

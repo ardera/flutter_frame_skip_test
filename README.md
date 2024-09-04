@@ -1,4 +1,4 @@
-# scrolling_test
+# frame_skip_test
 
 A new Flutter project.
 

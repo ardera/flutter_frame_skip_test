@@ -1,6 +1,6 @@
 {
-    "name": "scrolling_test",
-    "short_name": "scrolling_test",
+    "name": "frame_skip_test",
+    "short_name": "frame_skip_test",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
